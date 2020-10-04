@@ -7,7 +7,7 @@ const Users = ({allUsers}) => {
   return (
     <Grid container spacing={5} justify="space-evenly">
       {allUsers.data.map(({id, firstName, email, picture}) => (
-        <Grid item xs={2} key={id}>
+        <Grid item xs={6} lg={2} md={4} key={id}>
           <UserCard {...{name: firstName, id, email, image: picture}}/>
         </Grid>
       ))}

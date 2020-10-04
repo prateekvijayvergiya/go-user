@@ -23,7 +23,7 @@ const UserCard = ({name, email, id, image, onClick}) => {
           <Typography gutterBottom variant="h5" component="h2">
             {name}
           </Typography>
-          <Typography className={classes.email} variant="body2" color="textSecondary" component="p">
+          <Typography className={classes.email} variant="body2" color="textSecondary">
             {email}
           </Typography>
         </CardContent>
