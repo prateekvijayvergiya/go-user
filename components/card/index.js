@@ -7,11 +7,12 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import styles from '../../styles/Card.module.css'
 
 const UserCard = ({name, email, id, image, onClick}) => {
-  const classes = useStyles();
+  const classes = useStyles()
   return (
-    <Card className={classes.root}>
+    <Card className={styles.root}>
       <CardActionArea>
         <CardMedia
           component="img"
@@ -20,10 +21,10 @@ const UserCard = ({name, email, id, image, onClick}) => {
           image={image}
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography className={styles.text} gutterBottom variant="h5" component="h2">
             {name}
           </Typography>
-          <Typography className={classes.email} variant="body2" color="textSecondary">
+          <Typography className={styles.text} variant="body2" color="textSecondary">
             {email}
           </Typography>
         </CardContent>
@@ -42,7 +43,7 @@ const useStyles = makeStyles({
     maxWidth: 250,
     padding: 5
   },
-  email: {
+  text: {
     textOverflow: 'ellipsis',
     whiteSpace: 'nowrap',
     overflow: 'hidden',
