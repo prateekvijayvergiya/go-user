@@ -5,7 +5,7 @@ import Typography from '@material-ui/core/Typography'
 import styles from '../../styles/Profile.module.css'
 
 const Profile = ({userData}) => {
-  const {title, phone, firstName, lastName, picture, dateOfBirth, gender, email, location: {city, street, country}} = userData
+  const { phone, firstName, lastName, picture, dateOfBirth, gender, email, location: {city, street, country}} = userData
   return (
     <Box>
       <Grid container>
@@ -15,7 +15,7 @@ const Profile = ({userData}) => {
         <Grid item container lg={4} xs={12} className={styles.container}>
           <Grid item>
             <Typography variant={'h4'}>
-              {`${title} ${firstName} ${lastName}`}
+              {`${firstName} ${lastName}`}
             </Typography>
             <Typography variant={'h6'}>Gender: {gender}</Typography>
             <Typography variant={'h6'}>Date Of Birth: {dateOfBirth}</Typography>
