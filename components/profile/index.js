@@ -5,7 +5,7 @@ import Typography from '@material-ui/core/Typography'
 import styles from '../../styles/Profile.module.css'
 
 const Profile = ({userData}) => {
-  const {title='mr', phone='1234567890', firstName, lastName, picture, dateOfBirth, gender, email, location: {city, street, country}} = userData
+  const {title='mr', phone='1234567890', firstName, lastName, picture, dateOfBirth, gender, email, location: {city, street, country}} = userData || {}
   return (
     <Box>
       <Grid container>
