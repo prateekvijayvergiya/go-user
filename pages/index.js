@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react'
-import Head from 'next/head'
 import Link from 'next/link'
 import Grid from '@material-ui/core/Grid'
 import styles from '../styles/Home.module.css'
@@ -8,10 +7,6 @@ import { Button, Typography } from '@material-ui/core'
 export default function Home() {
   return (
     <Fragment>
-      <Head>
-        <title>Go User</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <Grid container alignItems={'center'}>
         <Grid item xs={6} sm={6}>
           <img className={styles.image} src='/detective.jpg' alt='detective doggo'/>
