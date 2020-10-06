@@ -2,6 +2,7 @@ import React, { Fragment, useEffect } from 'react'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import Head from 'next/head'
 import '../styles/globals.css'
+import Copyright from '../components/copyright'
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -19,6 +20,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <CssBaseline />
       <Component {...pageProps} />
+      <Copyright/>
     </Fragment>
   )
 }
