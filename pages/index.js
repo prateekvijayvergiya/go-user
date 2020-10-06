@@ -23,6 +23,11 @@ export default function Home() {
                 <a>Start Hacking</a>
               </Link>
             </Button>
+            <Button color="primary" variant="outlined">
+              <Link href="/posts">
+                <a>Start Exploring</a>
+              </Link>
+            </Button>
           </Grid>
         </Grid>
       </Grid>
