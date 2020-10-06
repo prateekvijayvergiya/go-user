@@ -10,7 +10,7 @@ import Typography from '@material-ui/core/Typography'
 import styles from '../../styles/Card.module.css'
 import Link from 'next/link'
 
-const UserCard = ({name, email, id, image, onClick}) => {
+const UserCard = ({name, email, id, image}) => {
   const classes = useStyles()
   return (
     <Card className={styles.root}>
@@ -22,10 +22,10 @@ const UserCard = ({name, email, id, image, onClick}) => {
           image={image}
         />
         <CardContent>
-          <Typography className={styles.text} gutterBottom variant="h5" component="h2">
+          <Typography className={classes.text} gutterBottom variant="h5" component="h2">
             {name}
           </Typography>
-          <Typography className={styles.text} variant="body2" color="textSecondary">
+          <Typography className={classes.text} variant="body2" color="textSecondary">
             {email}
           </Typography>
         </CardContent>
