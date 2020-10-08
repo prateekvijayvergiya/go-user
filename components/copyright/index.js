@@ -10,7 +10,10 @@ const Copyright = () => {
         Go User
       </Link>{' '}
       {new Date().getFullYear()}
-      {'.'}
+      {'. Created and Maintained by '}
+      <Link href='https://github.com/prateekvijayvergiya/'>
+        Prateek Vijayvergiya
+      </Link>{'.'}
     </Typography>
   )
 }
